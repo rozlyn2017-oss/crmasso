@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Système de Pilotage Intelligent (SPI)
 
-## Getting Started
+Ce projet vise à développer un système de pilotage intelligent qui dépasse les capacités traditionnelles des CRM.
 
-First, run the development server:
+## Structure du projet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Backend** : Node.js avec TypeScript pour les API.
+- **Frontend** : React avec TypeScript pour l'interface utilisateur.
+- **Base de données** : PostgreSQL pour gérer les clients et les workflows.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fonctionnalités principales
+- Centralisation des données clients.
+- Automatisation des workflows.
+- Visualisation et analyse via un tableau de bord interactif.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation et lancement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prérequis
+- Node.js
+- PostgreSQL
 
-## Learn More
+### Étapes
+1. Clonez ce dépôt :
+   ```bash
+   git clone https://github.com/rozlyn2017-oss/CRMASSO.git
+   ```
+2. Accédez au dossier du projet et installez les dépendances :
+   ```bash
+   cd CRMASSO/backend
+   npm install
+   ```
+3. Démarrez le serveur backend :
+   ```bash
+   npm start
+   ```
+4. Configurez le frontend dans le dossier `frontend`.
+5. Assurez-vous que PostgreSQL est configuré avec le fichier `database/schema.sql`.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contribution
+Les contributions sont les bienvenues pour améliorer ce projet.
