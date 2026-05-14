@@ -1,14 +1,14 @@
 import express from "express";
+import clientsRoutes from "./routes/clients";
+import workflowsRoutes from "./routes/workflows";
 
 const app = express();
-const PORT = 3000;
-
 app.use(express.json());
 
-app.get("/clients", (req, res) => {
-  res.json({ message: "Liste des clients" });
-});
+// Routes pour clients et workflows
+app.use("/clients", clientsRoutes);
+app.use("/workflows", workflowsRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Serveur backend démarré sur le port ${PORT}`);
-});
+// Démarrage du serveur
+const PORT = 3000;
+app.listen(PORT, () => console.log(`Serveur backend démarré : http://localhost:${PORT}`));
